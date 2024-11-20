@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\Api\ApiInvoiceController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
   </ItemGroup>
 
@@ -18,6 +22,10 @@
     <ProjectReference Include="..\QuickBooksIntegrator.Common\QuickBooksIntegrator.Common.csproj" />
     <ProjectReference Include="..\QuickBooksIntegrator.DTO\QuickBooksIntegrator.DTO.csproj" />
     <ProjectReference Include="..\QuickBooksIntegrator.Infrastructure\QuickBooksIntegrator.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Controllers\Api\ApiInvoiceController.cs" />
   </ItemGroup>
 
 </Project>

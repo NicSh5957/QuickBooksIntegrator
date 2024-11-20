@@ -11,6 +11,7 @@ using QuickBooksIntegrator.Infrastructure.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
 
 var quickBooksConfig = builder.Configuration.GetSection("QuickBooksConfig").Get<QuickBooksConfig>();
 builder.Services.AddSingleton(quickBooksConfig);
