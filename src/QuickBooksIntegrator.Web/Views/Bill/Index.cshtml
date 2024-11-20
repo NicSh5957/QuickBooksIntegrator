@@ -1,0 +1,23 @@
+﻿@model List<QuickBooksIntegrator.DTO.Bills.BillDto>
+
+<h2>Bills</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Bill Number</th>
+        <th>Date</th>
+        <th>Amount Due</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var bill in Model)
+    {
+        <tr>
+            <td>@bill.BillNumber</td>
+            <td>@bill.Date.ToShortDateString()</td>
+            <td>@bill.AmountDue</td>
+        </tr>
+    }
+    </tbody>
+</table>

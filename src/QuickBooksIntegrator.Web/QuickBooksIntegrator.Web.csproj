@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>a7f65aaf-2616-47dc-bd95-61961592396c</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuickBooksIntegrator.Application\QuickBooksIntegrator.Application.csproj" />
+    <ProjectReference Include="..\QuickBooksIntegrator.Common\QuickBooksIntegrator.Common.csproj" />
+    <ProjectReference Include="..\QuickBooksIntegrator.DTO\QuickBooksIntegrator.DTO.csproj" />
+    <ProjectReference Include="..\QuickBooksIntegrator.Infrastructure\QuickBooksIntegrator.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

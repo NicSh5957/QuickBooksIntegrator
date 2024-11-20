@@ -1,0 +1,23 @@
+﻿@model List<QuickBooksIntegrator.DTO.Checks.CheckDto>
+
+<h2>Checks</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Check Number</th>
+        <th>Date</th>
+        <th>Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var check in Model)
+    {
+        <tr>
+            <td>@check.CheckNumber</td>
+            <td>@check.Date.ToShortDateString()</td>
+            <td>@check.Amount</td>
+        </tr>
+    }
+    </tbody>
+</table>

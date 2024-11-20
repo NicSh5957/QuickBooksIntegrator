@@ -1,0 +1,25 @@
+﻿@model List<QuickBooksIntegrator.DTO.Invoices.InvoiceDto>
+
+<h2>Invoices</h2>
+
+<a asp-action="Create" class="btn btn-primary" style="margin-bottom: 15px;">Add New Invoice</a>
+
+<table>
+    <thead>
+    <tr>
+        <th>Invoice Number</th>
+        <th>Date</th>
+        <th>Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var invoice in Model)
+    {
+        <tr>
+            <td>@invoice.InvoiceNumber</td>
+            <td>@invoice.Date.ToShortDateString()</td>
+            <td>@invoice.Amount</td>
+        </tr>
+    }
+    </tbody>
+</table>

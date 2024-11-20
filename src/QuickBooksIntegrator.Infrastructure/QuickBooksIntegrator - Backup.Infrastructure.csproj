@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Platforms>AnyCPU;x86</Platforms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<COMReference Include="QuickBooksInfoLib">
+			<WrapperTool>tlbimp</WrapperTool>
+			<VersionMinor>0</VersionMinor>
+			<VersionMajor>1</VersionMajor>
+			<Guid>52dad148-e53e-4ca6-81ea-4e020eac546b</Guid>
+			<Lcid>0</Lcid>
+			<Isolated>false</Isolated>
+			<EmbedInteropTypes>true</EmbedInteropTypes>
+		</COMReference>
+		<COMReference Include="QBFC16Lib">
+			<WrapperTool>tlbimp</WrapperTool>
+			<VersionMinor>0</VersionMinor>
+			<VersionMajor>1</VersionMajor>
+			<Guid>be74a146-9fc3-4285-9c72-fce0a829c009</Guid>
+			<Lcid>0</Lcid>
+			<Isolated>false</Isolated>
+			<EmbedInteropTypes>true</EmbedInteropTypes>
+		</COMReference>
+		<COMReference Include="QBXMLRP2Lib">
+			<WrapperTool>tlbimp</WrapperTool>
+			<VersionMinor>0</VersionMinor>
+			<VersionMajor>1</VersionMajor>
+			<Guid>4351618f-9059-4a79-b638-dcb8b97b3262</Guid>
+			<Lcid>0</Lcid>
+			<Isolated>false</Isolated>
+			<EmbedInteropTypes>true</EmbedInteropTypes>
+		</COMReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Common\QuickBooksIntegrator.Common.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+﻿@model List<QuickBooksIntegrator.DTO.ItemSales.ItemSalesDto>
+
+<h2>Item Sales</h2>
+
+<table>
+    <thead>
+    <tr>
+        <th>Item Name</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ItemName</td>
+            <td>@item.Price</td>
+        </tr>
+    }
+    </tbody>
+</table>
